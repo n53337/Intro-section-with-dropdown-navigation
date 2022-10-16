@@ -26,7 +26,7 @@
           <li class="header__link">
             <div class="header__link__title nav-features link flex">
               <span>Features</span>
-              <img src="./images/icon-arrow-down.svg" alt="" />
+              <img class="" src="./images/icon-arrow-down.svg" alt="" />
             </div>
             <ul class="header__submenu sub-features d-none">
               <li class="header__submenu__item flex">
@@ -80,5 +80,36 @@
     </header>
 
     <!-- BODY -->
+
+    <main class="main container grid">
+      <div class="cta flex">
+        <h1 class="fs-l fw-l c-black">Make remote work</h1>
+        <p class="fs-s fw-s c-gray">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="fs-s fw-l btn btn--black">Learn more</button>
+        <div class="companies flex">
+          <img src="/images/client-databiz.svg" alt="databiz" />
+          <img src="/images/client-audiophile.svg" alt="audiophile" />
+          <img src="/images/client-meet.svg" alt="meet" />
+          <img src="/images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+
+      <div class="hero_img">
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="/images/image-hero-mobile.png"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="/images/image-hero-desktop.png"
+          />
+          <img src="/images/image-hero-mobile.png" alt="hero image" />
+        </picture>
+      </div>
+    </main>
   </body>
 </html>

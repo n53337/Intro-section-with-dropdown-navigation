@@ -129,15 +129,16 @@ bg-transp {
 
 .btn {
   outline: none;
-  padding: 0.5em 1em;
+  padding: 0.4em 1.2em;
   border: 0.1rem solid var(--clr-black);
-  outline: 1px solid var(--clr-black);
   border-radius: 1em;
+  cursor: pointer;
 }
 
 .btn--white {
   background-color: var(--clr-white);
   color: var(--clr-gray);
+  outline: 1px solid var(--clr-black);
 }
 .btn--white:hover {
   color: var(--clr-black);
@@ -150,6 +151,7 @@ bg-transp {
 .btn--black:hover {
   color: var(--clr-black);
   background-color: var(--clr-white);
+  outline: 1px solid var(--clr-black);
 }
 
 /* ==== Anchor links ==== */
@@ -179,6 +181,13 @@ bg-transp {
 
 .d-block {
   display: block;
+}
+
+/* Animations */
+
+.rot-anim {
+  transform: rotateZ(180deg);
+  transition: 0.5s;
 }
 
 /*
@@ -222,6 +231,10 @@ bg-transp {
   align-items: center;
   gap: 0.3rem;
   position: relative;
+}
+
+.header__link__title > img {
+  transition: 0.5s;
 }
 
 .header__submenu {
@@ -319,4 +332,83 @@ bg-transp {
   .sub-company {
     left: 7rem;
   }
+}
+
+/* ____________________________ */
+
+/* HERO */
+
+/* === Mobile hero === */
+@media (max-width: 50em) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .cta {
+    flex-direction: column;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .cta button {
+    align-self: center;
+  }
+
+  .companies {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .companies img {
+    width: 5rem;
+  }
+
+  .hero_img > picture {
+    max-width: 100%;
+  }
+}
+
+/* === Desktop hero === */
+@media (min-width: 50em) {
+  .main {
+    width: 100%;
+    grid-template-columns: 10% 1fr 5% 1fr 10%;
+    place-content: center;
+  }
+
+  .cta {
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+
+  .cta > h1 {
+    line-height: 1;
+  }
+
+  .companies {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .companies img {
+    width: 4rem;
+  }
+
+  .hero_img {
+    grid-column: 4/5;
+    align-self: center;
+  }
+
+  .hero_img > picture {
+    max-width: 80%;
+  }
+}
+
+.cta > button {
+  width: fit-content;
 }
