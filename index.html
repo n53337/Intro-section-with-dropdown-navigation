@@ -13,21 +13,68 @@
     <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <body>
-    <h1 class="fs-l fw-l c-black">Header</h1>
-    <p class="fs-s fw-s c-gray">
-      Features Company Careers About Login Register Make remote work Get your
-      team in sync, no matter your location. Streamline processes, create team
-      rituals, and watch productivity soar. Learn more
-    </p>
+    <!-- HEADER -->
 
-    <div class="attribution">
-      Challenge by
-      <a
-        class="link"
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <header class="header flex container">
+      <div class="header__logo">
+        <img src="./images/logo.svg" alt="website logo" />
+      </div>
+      <!-- navigation -->
+      <nav class="header__nav flex fs-s">
+        <ul class="flex">
+          <li class="header__link">
+            <div class="header__link__title link flex">
+              <span>Features</span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </div>
+            <ul class="header__submenu">
+              <li class="header__submenu__item flex">
+                <img src="./images/icon-todo.svg" alt="" /><span class="link"
+                  >Todo List</span
+                >
+              </li>
+              <li class="header__submenu__item flex">
+                <img src="./images/icon-calendar.svg" alt="" /><span
+                  class="link"
+                  >Calendar</span
+                >
+              </li>
+              <li class="header__submenu__item flex">
+                <img src="./images/icon-reminders.svg" alt="" /><span
+                  class="link"
+                  >Reminders</span
+                >
+              </li>
+              <li class="header__submenu__item flex">
+                <img src="./images/icon-planning.svg" alt="" /><span
+                  class="link"
+                  >Planing</span
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__link link">
+            <div class="header__link__title link flex">
+              <span>Company</span>
+              <img src="./images/icon-arrow-down.svg" alt="" />
+            </div>
+            <ul class="header__submenu">
+              <li class="link">History</li>
+              <li class="link">Our Team</li>
+              <li class="link">Blog</li>
+            </ul>
+          </li>
+          <li class="header__link link">Careers</li>
+          <li class="header__link link">About</li>
+        </ul>
+        <!-- buttons -->
+        <div class="header__btns flex">
+          <a class="link" href="#">Login</a>
+          <a class="btn btn--white" href="#">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BODY -->
   </body>
 </html>
