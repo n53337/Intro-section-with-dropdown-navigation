@@ -11,6 +11,7 @@
     />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/index.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -20,7 +21,7 @@
         <img src="./images/logo.svg" alt="website logo" />
       </div>
       <!-- navigation -->
-      <nav class="header__nav flex fs-s">
+      <nav class="header__nav flex fs-s nav-hide">
         <ul class="flex">
           <li class="header__link">
             <div class="header__link__title link flex">
@@ -73,6 +74,9 @@
           <a class="btn btn--white" href="#">Register</a>
         </div>
       </nav>
+      <div class="menu-btn grid d-none">
+        <img src="./images/icon-menu.svg" alt="menu toggle" />
+      </div>
     </header>
 
     <!-- BODY -->

@@ -243,6 +243,10 @@ bg-transp {
 }
 
 @media (max-width: 50em) {
+  .header {
+    justify-content: space-between;
+  }
+
   .header__btns {
     flex-direction: column;
     gap: 0;
@@ -253,6 +257,16 @@ bg-transp {
 
   .header__btns a {
     width: 100%;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-hide {
+    transform: translateX(100%);
+    transition: 0.5s;
   }
 }
 
